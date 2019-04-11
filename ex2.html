@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="result()">
+<p id="1"></p>
+<p id="2"></p>
+<script>
+    function acrCycle(r) {
+        let acr ;
+        acr = r * 3.14 * 3.14 ;
+        return acr;
+    }
+    function periCycle(r) {
+        let per ;
+        per = 2 * 3.14 * r ;
+        return per;
+    }
+    function result() {
+        let x = acrCycle(1) ;
+        let y = periCycle(1) ;
+        document.getElementById('1').innerHTML = x ;
+        document.getElementById('2').innerHTML = y ;
+    }
+</script>
+</body>
+</html>

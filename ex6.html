@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="test()">
+<script>
+    function isInt(num) {
+        if ((parseInt(num) == num) && num > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function test() {
+        let x = isInt(1.1);
+        alert(x);
+    }
+</script>
+</body>
+</html>

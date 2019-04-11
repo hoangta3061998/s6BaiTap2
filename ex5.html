@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkSmallest() {
+        let a = parseFloat(prompt("So thu nhat :"));
+        let b = parseFloat(prompt("So thu hai :"));
+        let c = parseFloat(prompt("So thu ba :"));
+        if (a < b) {
+            if (a < c) {
+                return a;
+            } else {
+                return c;
+            }
+        } else if (b < c) {
+            return b;
+        } else {
+            return c;
+        }
+    }
+    alert(checkSmallest());
+</script>
+</body>
+</html>

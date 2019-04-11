@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="test()">
+<script>
+    function checkArray(arr, text) {
+        for (let i = 0 ; i < arr.length ; i++) {
+            if (text == arr[i]) {
+                return i;
+            } else {
+                return -1;
+            }
+        }
+    }
+    function test() {
+        let arr1 = ["a" , "b" , "c" , "d"];
+        let x = "e";
+        document.write(checkArray(arr1,x));
+    }
+</script>
+</body>
+</html>
